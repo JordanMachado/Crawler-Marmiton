@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Recette titre="Gratin de pommes de terre au surimi">
+	<Infos>
+		<TempsPrepa>20 minutes</TempsPrepa>
+		<TempsCuisson>60 minutes</TempsCuisson>
+		<PhotoUrl>http://images.marmitoncdn.org/recipephotos/multiphoto/72/723d5aac-734f-4a06-9787-7976050407d8_normal.jpg</PhotoUrl>
+	</Infos>
+	<Ingredients>
+		<Ingredient>Ingrédients (pour 4 personnes)</Ingredient>
+		<Ingredient>600 g de pommes de terre</Ingredient>
+		<Ingredient>1 grande boîte de champignons de paris (ou 200 g)</Ingredient>
+		<Ingredient>10 cl de crème liquide</Ingredient>
+		<Ingredient>10 cl de soupe à la tomate</Ingredient>
+		<Ingredient>100 g de surimi</Ingredient>
+		<Ingredient>50 g de comté</Ingredient>
+		<Ingredient>herbes de provence, basilic</Ingredient>
+		<Ingredient>sel, poivre</Ingredient>
+	</Ingredients>
+	<Preparation>
+Pelez, lavez et émincez finement les <lien url="http://www.marmiton.org/Pratique/Fruits-Et-Legumes_la-pomme_1.aspx">pommes</lien> de terre.Lavez et émincez les champignons, et coupez le surimi en dés.Mélangez la crème et la soupe à la tomate.Huilez un plat à gratin, tapissez de la moitié des rondelles de pommes de terre, saupoudrez d'herbes, ajoutez champignons et surimi.Terminez par les pommes de terre.Nappez de crème-soupe, salez et poivrez.Enfournez pendant une bonne heure, à 200°C (th 6-7) environ.30 min avant de servir, recouvrez de lamelles de comté, faites gratiner, et servez bien chaud.
+	</Preparation>
+</Recette>

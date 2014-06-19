@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Recette titre="Piquettes betterave comté noix">
+	<Infos>
+		<TempsPrepa>15 minutes</TempsPrepa>
+		<TempsCuisson>0 minutes</TempsCuisson>
+	</Infos>
+	<Ingredients>
+		<Ingredient>Ingrédients (pour 20 mini brochettes)</Ingredient>
+		<Ingredient>100g de comté</Ingredient>
+		<Ingredient>200g de betterave</Ingredient>
+		<Ingredient>10 à 20 cerneaux de noix</Ingredient>
+		<Ingredient>10 bouquets de mâche</Ingredient>
+		<Ingredient>1 cuillère à soupe d'huile de noix</Ingredient>
+		<Ingredient>sel, poivre</Ingredient>
+		<Ingredient>20 cures-dents</Ingredient>
+	</Ingredients>
+</Recette>

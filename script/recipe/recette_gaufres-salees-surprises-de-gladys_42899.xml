@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Recette titre="Gaufres salées surprises de Gladys">
+	<Infos>
+		<TempsPrepa>30 minutes</TempsPrepa>
+		<TempsCuisson>20 minutes</TempsCuisson>
+		<PhotoUrl>http://placehold.it/350x350</PhotoUrl>
+	</Infos>
+	<Ingredients>
+		<Ingredient>Ingrédients (pour 6 personnes)</Ingredient>
+		<Ingredient>des gaufres faites avec la recette de "gaufres picardes" du site mais sans sucre</Ingredient>
+		<Ingredient>1/2 l de lait</Ingredient>
+		<Ingredient>60 g de farine</Ingredient>
+		<Ingredient>un morceau de beurre</Ingredient>
+		<Ingredient>2 ou 3 tranches de jambon</Ingredient>
+		<Ingredient>gruyère rapé</Ingredient>
+		<Ingredient>sel, poivre</Ingredient>
+		<Ingredient>optionnel</Ingredient>
+		<Ingredient>noix de muscade ou curry</Ingredient>
+	</Ingredients>
+	<Preparation>
+Préparer les gaufres à l'avance et les cuire.Préparer la <lien url="http://www.marmiton.org/Recettes/Recettes-Incontournables-Detail_bechamel_r_84.aspx">béchamel</lien> : faire fondre le beurre, le mélanger avec la farine, ajouter petit à petit le lait sans faire de grumeaux, porter à ébullition 1 min tout en remuant. A la fin, assaisonner et ajouter si désiré de la noix de muscade rapée ou du curry.Mixer le jambon et l'incorporer à la béchamel.Remplir les alvéoles des gaufres de cette sauce et lisser avec un couteau pour obtenir une surface lisse.Parsemer à souhait de gruyère rapé.Mettre sous le grill du four jusqu'à la couleur que vous préferez (ça dépend de chacun).
+	</Preparation>
+</Recette>
