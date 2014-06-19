@@ -23,11 +23,6 @@
 		$recipeIngredientsClass = "m_content_recette_ingredients";
 		$recipeTodoClass = "m_content_recette_todo";
 		
-
-		
-		
-
-
 		$recipeTitleNodeValue =  getNodeValueByClassName($recipeTitleClass,$finder);
 		$recipeInfoNodeValue =  getNodeValueByClassName($recipeInfoClass,$finder);
 		preg_match_all("/[^:]*minutes/",$recipeInfoNodeValue,$recipeInfoMatchs);
