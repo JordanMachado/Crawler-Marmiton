@@ -3,16 +3,13 @@
 	// if the parameter url is sended
 	if(isset($_POST["recipeLink"]) && !empty($_POST["recipeLink"]))
 	{
-		$recipeLink = $_POST["recipeLink"];
-		//echo $recipeLink;
-		
-		
+		$recipeLink = $_POST["recipeLink"];		
 		$filename = getFileNameByUrl($recipeLink);
 		$fileHandle = fopen($filename, 'w') or die("can't open file");
 
-		
 		ini_set('user_agent', 'Mozilla/5.0');
 		$doc = new DOMDocument();
+
 		/* add @ because a lot of marmiton's html page for recipe are not valid 
 		 * loadHTMLFile show error if a tag is not closed for example
 		*/
@@ -31,21 +28,21 @@
 		
 
 
-		$receipeTitleNodeValue =  getNodeValueByClassName($recipeTitleClass,$finder);
-		$receipeInfoNodeValue =  getNodeValueByClassName($recipeInfoClass,$finder);
-		preg_match_all("/[^:]*minutes/",$receipeInfoNodeValue,$receipeInfoMatchs);
-		$receipePhotoUrl = getPhotoUrlReceipeByClassName($recipeImageClass,$finder);
-		$receipteIngredients =  getNodeValueByClassName($recipeIngredientsClass,$finder);
-		$arrayIngredients = preg_split('/- |:/', $receipteIngredients);
-		$receipeTodo =  getContentByClassName($recipeTodoClass,$finder);
+		$recipeTitleNodeValue =  getNodeValueByClassName($recipeTitleClass,$finder);
+		$recipeInfoNodeValue =  getNodeValueByClassName($recipeInfoClass,$finder);
+		preg_match_all("/[^:]*minutes/",$recipeInfoNodeValue,$recipeInfoMatchs);
+		$recipePhotoUrl = getPhotoUrlRecipeByClassName($recipeImageClass,$finder);
+		$recipteIngredients =  getNodeValueByClassName($recipeIngredientsClass,$finder);
+		$arrayIngredients = preg_split('/- |:/', $recipteIngredients);
+		$recipeTodo =  getContentByClassName($recipeTodoClass,$finder);
 		
 		
 		fwrite($fileHandle, "<?xml version=\"1.0\" encoding=\"utf-8\"?>");
-		fwrite($fileHandle, "\r\n<Recette titre=\"".$receipeTitleNodeValue."\">");
+		fwrite($fileHandle, "\r\n<Recette titre=\"".$recipeTitleNodeValue."\">");
 		fwrite($fileHandle, "\r\n	<Infos>");
-		fwrite($fileHandle, "\r\n		<TempsPrepa>".trim($receipeInfoMatchs[0][0])."</TempsPrepa>");
-		fwrite($fileHandle, "\r\n		<TempsCuisson>".trim($receipeInfoMatchs[0][1])."</TempsCuisson>");
-		fwrite($fileHandle, "\r\n		<PhotoUrl>".$receipePhotoUrl."</PhotoUrl>");
+		fwrite($fileHandle, "\r\n		<TempsPrepa>".trim($recipeInfoMatchs[0][0])."</TempsPrepa>");
+		fwrite($fileHandle, "\r\n		<TempsCuisson>".trim($recipeInfoMatchs[0][1])."</TempsCuisson>");
+		fwrite($fileHandle, "\r\n		<PhotoUrl>".$recipePhotoUrl."</PhotoUrl>");
 		fwrite($fileHandle, "\r\n	</Infos>");
 		fwrite($fileHandle, "\r\n	<Ingredients>");
 
@@ -59,7 +56,7 @@
 
 		fwrite($fileHandle, "\r\n	</Ingredients>");
 		fwrite($fileHandle, "\r\n	<Preparation>");
-		fwrite($fileHandle, "\r\n".$receipeTodo);
+		fwrite($fileHandle, "\r\n".$recipeTodo);
 		fwrite($fileHandle, "\r\n	</Preparation>");
 		fwrite($fileHandle, "\r\n</Recette>");
 		fclose($fileHandle);
@@ -118,7 +115,7 @@
 	/*
 	**
 	*/
-	function getPhotoUrlReceipeByClassName($className,$finder)
+	function getPhotoUrlRecipeByClassName($className,$finder)
 	{
 		$nodes = $finder->query("//*[contains(concat(' ', normalize-space(@class), ' '), '".$className."')]");
 		foreach ($nodes as $node) 
